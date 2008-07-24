@@ -1,7 +1,7 @@
 %define module	Net-Dict
 %define name	perl-%{module}
 %define version	2.07
-%define	release	%mkrel 4
+%define	release	%mkrel 6
 
 Name:		%{name}
 Version:	%{version}
