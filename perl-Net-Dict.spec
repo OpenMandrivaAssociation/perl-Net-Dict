@@ -1,15 +1,15 @@
 %define upstream_name	 Net-Dict
-%define upstream_version 2.07
+%define upstream_version 2.10
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	1
 
 Summary:	A perl client for accessing network dictionary servers
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Net/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Net/Net-Dict-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildArch:	noarch
@@ -33,7 +33,7 @@ perl Makefile.PL INSTALLDIRS=vendor < /dev/null
 %makeinstall_std
 
 %files
-%doc ChangeLog README examples
+%doc README examples
 %{perl_vendorlib}/Net/*
 %{_mandir}/*/*
 %{_bindir}/dict
@@ -74,4 +74,5 @@ perl Makefile.PL INSTALLDIRS=vendor < /dev/null
 
 * Wed Sep 15 2004 Rafael Garcia-Suarez <rgarciasuarez@mandrakesoft.com> 2.07-1mdk
 - Initial MDK release.
+
 
