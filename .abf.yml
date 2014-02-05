@@ -1,4 +1,5 @@
 removed_sources:
   Net-Dict-2.07.tar.bz2: 493b361a560123c2b8a6c49955717fffb81b06f9
-sources:
   Net-Dict-2.10.tar.gz: 5d35ba1a54d157f5cd7306f5bcbf86f39e8041ce
+sources:
+  Net-Dict-2.13.tar.gz: 3a777d1411506c5b886134c3dccdd0ca9671413d

@@ -1,5 +1,5 @@
 %define upstream_name	 Net-Dict
-%define upstream_version 2.10
+%define upstream_version 2.13
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -74,5 +74,6 @@ perl Makefile.PL INSTALLDIRS=vendor < /dev/null
 
 * Wed Sep 15 2004 Rafael Garcia-Suarez <rgarciasuarez@mandrakesoft.com> 2.07-1mdk
 - Initial MDK release.
+
 
 
