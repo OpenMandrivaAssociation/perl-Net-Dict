@@ -1,11 +1,12 @@
 %define upstream_name	 Net-Dict
-%define upstream_version 2.15
+%define upstream_version 2.16
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	A perl client for accessing network dictionary servers
+
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
@@ -39,5 +40,6 @@ perl Makefile.PL INSTALLDIRS=vendor < /dev/null
 %{_mandir}/*/*
 %{_bindir}/dict
 %{_bindir}/tkdict
+
 
 
