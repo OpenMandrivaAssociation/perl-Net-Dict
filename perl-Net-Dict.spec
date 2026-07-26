@@ -1,9 +1,7 @@
 %define upstream_name	 Net-Dict
-%define upstream_version 2.22
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	2.22
+Release:	2
 
 Summary:	A perl client for accessing network dictionary servers
 
@@ -12,7 +10,7 @@ Summary:	A perl client for accessing network dictionary servers
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/neilbowers/Net-Dict
-Source0:	https://cpan.metacpan.org/authors/id/N/NE/NEILB/Net-Dict-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/N/NE/NEILB/Net-Dict-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -27,7 +25,7 @@ dictionary servers. It provides a simple client API for the DICT network
 protocol.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor < /dev/null
