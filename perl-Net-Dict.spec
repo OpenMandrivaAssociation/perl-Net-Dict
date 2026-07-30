@@ -2,7 +2,7 @@
 %define upstream_version 2.22
 Name:		perl-%{upstream_name}
 Version:	2.22
-Release:	1
+Release:	2
 
 Summary:	A perl client for accessing network dictionary servers
 
@@ -26,7 +26,7 @@ dictionary servers. It provides a simple client API for the DICT network
 protocol.
 
 %prep
-%setup -q -n %{upstream_name}-%{version}
+%setup -q -n Net-Dict-2.22
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor < /dev/null
