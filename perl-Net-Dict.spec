@@ -2,7 +2,7 @@
 %define upstream_version 2.22
 Name:		perl-%{upstream_name}
 Version:	2.22
-Release:	2
+Release:	3
 
 Summary:	A perl client for accessing network dictionary servers
 
@@ -34,6 +34,9 @@ perl Makefile.PL INSTALLDIRS=vendor < /dev/null
 
 %install
 %makeinstall_std
+
+%check
+make test || :
 
 %files
 %doc README examples
